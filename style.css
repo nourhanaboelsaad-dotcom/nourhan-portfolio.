@@ -1,0 +1,121 @@
+/* Fatma Mostafa Portfolio — black & white professional theme */
+:root {
+  --black: #111111;
+  --white: #ffffff;
+  --paper: #f5f5f3;
+  --muted: #777773;
+  --line: #deded9;
+  --soft-line: rgba(255,255,255,.18);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body { margin: 0; color: var(--black); background: var(--white); font-family: "DM Sans", Arial, sans-serif; line-height: 1.7; }
+a { color: inherit; text-decoration: none; }
+.navbar { background: rgba(255,255,255,.94); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(17,17,17,.08); padding: 14px 0; }
+.navbar-brand { font-weight: 700; letter-spacing: -1.5px; font-size: 1.55rem; }
+.navbar-brand span { color: #888; }
+.nav-link { color: #444 !important; font-size: .83rem; margin-left: 20px; font-weight: 600; }
+.nav-link:hover { color: #000 !important; }
+.contact-link { border: 1px solid #222; border-radius: 30px; padding: 8px 16px !important; }
+.navbar-toggler { border: 1px solid #bbb; box-shadow: none !important; }
+.section-pad { padding: 110px 0; position: relative; }
+.hero { padding-top: 170px; padding-bottom: 120px; overflow: hidden; }
+.eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: 2.2px; color: #666; margin-bottom: 22px; }
+.eyebrow-line { display: inline-block; width: 28px; height: 1px; background: #222; vertical-align: middle; margin-right: 9px; }
+h1, h2, h3, p { margin-top: 0; }
+h1, .section-heading h2, .contact-panel h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 600; letter-spacing: -1.5px; }
+h1 { font-size: clamp(3rem, 6.5vw, 5.7rem); line-height: 1.08; margin-bottom: 26px; }
+h1 span, .section-heading h2 span, .contact-panel h2 span { color: #777; font-style: italic; }
+.hero-copy { max-width: 570px; color: #5f5f5b; font-size: 1.05rem; }
+.hero-copy strong { color: #111; }
+.btn { font-size: .85rem; font-weight: 600; transition: transform .2s ease, background .2s ease; }
+.btn:hover { transform: translateY(-2px); }
+.btn-dark { background: #111; border-color: #111; }
+.btn-dark:hover { background: #333; border-color: #333; }
+.btn-outline-dark:hover { background: #111; }
+.hero-meta { display: flex; align-items: center; gap: 12px; margin-top: 40px; color: #777; font-size: .78rem; }
+.status-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #222; margin-right: 6px; }
+.meta-divider { color: #bbb; }
+.hero-card { min-height: 455px; background: #111; color: #fff; padding: 28px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; }
+.card-topline { display: flex; justify-content: space-between; color: #aaa; font-size: .65rem; letter-spacing: 1.5px; }
+.monogram { position: absolute; top: 75px; left: 35px; font-family: "Playfair Display", Georgia, serif; font-size: clamp(7rem, 18vw, 13rem); line-height: 1; letter-spacing: -18px; color: #f7f7f4; opacity: .95; }
+.monogram span { color: #777; }
+.hero-card-bottom { display: flex; align-items: end; justify-content: space-between; position: relative; z-index: 1; }
+.small-label { font-size: .63rem; letter-spacing: 1.8px; color: #aaa; margin-bottom: 10px; }
+.hero-card-bottom h2 { font-family: "Playfair Display", Georgia, serif; font-size: 2rem; line-height: 1.1; margin: 0; }
+.circle-arrow { width: 48px; height: 48px; border: 1px solid #666; border-radius: 50%; display: grid; place-items: center; font-size: 1.3rem; }
+.decor-line { position: absolute; width: 1px; height: 170px; background: #444; right: 27%; top: 25%; transform: rotate(40deg); }
+.hero-index { position: absolute; right: 26px; bottom: 25px; writing-mode: vertical-rl; color: #aaa; font-size: .62rem; letter-spacing: 2px; }
+.section-light { background: var(--paper); }
+.section-heading { margin-bottom: 52px; }
+.section-heading .eyebrow { margin-bottom: 14px; }
+.section-heading h2, .contact-panel h2 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.12; margin-bottom: 18px; }
+.section-intro { color: #777; max-width: 540px; margin-bottom: 0; }
+.large-statement { font-family: "Playfair Display", Georgia, serif; font-size: clamp(1.65rem, 3vw, 2.35rem); line-height: 1.35; max-width: 420px; }
+.body-copy { color: #666; font-size: .96rem; }
+.facts-row { display: flex; gap: 40px; border-top: 1px solid #d8d8d2; margin-top: 35px; padding-top: 22px; }
+.facts-row > div { display: flex; flex-direction: column; }
+.fact-number { font-family: "Playfair Display", Georgia, serif; font-size: 1.8rem; line-height: 1.3; }
+.fact-label { color: #777; font-size: .72rem; }
+.skill-card { height: 100%; min-height: 265px; padding: 26px; border: 1px solid var(--line); position: relative; background: #fff; transition: transform .2s ease, border-color .2s ease; }
+.skill-card:hover { transform: translateY(-4px); border-color: #888; }
+.skill-number { position: absolute; top: 23px; right: 24px; color: #aaa; font-size: .7rem; }
+.skill-icon { font-size: 1.7rem; font-weight: 500; margin: 10px 0 22px; }
+.skill-card h3 { font-size: 1.1rem; font-weight: 700; }
+.skill-card p { color: #777; font-size: .85rem; line-height: 1.7; }
+.skill-tag { font-size: .62rem; letter-spacing: 1px; color: #777; margin-top: 22px; }
+.note-line { font-size: .75rem; color: #858580; margin-top: 25px; }
+.project-list { border-top: 1px solid #d7d7d1; }
+.project-item { display: grid; grid-template-columns: 70px 1fr 45px; gap: 24px; align-items: start; padding: 34px 0; border-bottom: 1px solid #d7d7d1; }
+.project-index { font-family: "Playfair Display", Georgia, serif; font-size: 1.6rem; color: #999; }
+.project-type { font-size: .65rem; letter-spacing: 1.5px; color: #777; }
+.project-info h3 { font-size: 1.45rem; font-weight: 700; margin: 8px 0; }
+.project-info p { max-width: 680px; color: #696965; font-size: .9rem; margin-bottom: 16px; }
+.project-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.project-chips span { border: 1px solid #d0d0ca; border-radius: 30px; padding: 4px 11px; font-size: .68rem; color: #555; }
+.project-symbol { font-size: 1.4rem; transition: transform .2s ease; }
+.project-item:hover .project-symbol { transform: translate(3px,-3px); }
+.education-card { display: grid; grid-template-columns: 130px 1fr 90px; gap: 25px; padding: 30px 0; border-top: 1px solid var(--line); align-items: start; }
+.education-card-secondary { border-bottom: 1px solid var(--line); }
+.education-year, .education-mark { color: #777; font-size: .68rem; letter-spacing: 1.3px; }
+.education-main h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 4px; }
+.education-main p { color: #666; font-size: .88rem; margin-bottom: 8px; }
+.education-main span { color: #777; font-size: .84rem; }
+.education-mark { text-align: right; }
+.contact-section { background: #f5f5f3; padding-top: 35px; }
+.contact-panel { background: #111; color: #fff; padding: clamp(32px, 7vw, 82px); }
+.contact-panel .eyebrow { color: #aaa; }
+.contact-panel h2 span { color: #aaa; }
+.contact-panel > p:not(.eyebrow):not(.contact-hint) { color: #bbb; max-width: 480px; margin: 20px 0 30px; }
+.contact-placeholder { display: inline-flex; gap: 28px; align-items: center; border-bottom: 1px solid #777; padding-bottom: 8px; font-size: .95rem; }
+.contact-placeholder span { font-size: 1.2rem; }
+.contact-hint { font-size: .72rem; color: #888; margin-top: 14px; }
+.footer { background: #111; color: #aaa; padding: 24px 0; font-size: .7rem; }
+.footer a { color: #fff; }
+@media (max-width: 991px) {
+  .nav-link { margin-left: 0; padding: 10px 0 !important; }
+  .contact-link { display: inline-block; margin-top: 6px; padding: 8px 16px !important; }
+  .hero { padding-top: 140px; }
+  .hero-card { min-height: 390px; }
+  .hero-index { display: none; }
+}
+@media (max-width: 575px) {
+  .section-pad { padding: 76px 0; }
+  .hero { padding-top: 120px; padding-bottom: 80px; }
+  h1 { font-size: 3.15rem; }
+  .hero-meta { flex-wrap: wrap; }
+  .hero-card { min-height: 330px; padding: 22px; }
+  .monogram { top: 76px; left: 28px; font-size: 8rem; letter-spacing: -12px; }
+  .hero-card-bottom h2 { font-size: 1.65rem; }
+  .section-heading { margin-bottom: 35px; }
+  .facts-row { gap: 22px; }
+  .project-item { grid-template-columns: 36px 1fr 20px; gap: 12px; padding: 26px 0; }
+  .project-index { font-size: 1.2rem; }
+  .project-info h3 { font-size: 1.18rem; }
+  .project-symbol { font-size: 1.1rem; }
+  .education-card { grid-template-columns: 1fr auto; gap: 12px; }
+  .education-year { grid-column: 1 / -1; }
+  .education-mark { grid-column: 2; grid-row: 2; }
+  .education-main { grid-column: 1 / -1; }
+  .footer .container { text-align: center; }
+}
